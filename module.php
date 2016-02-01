@@ -415,16 +415,18 @@ function blog_comments_post($logid,$ckname,$ckmail,$ckurl,$verifyCode,$allow_rem
 		<form method="post" name="commentform" action="<?php echo BLOG_URL; ?>index.php?action=addcom" id="commentform">
 			<input type="hidden" name="gid" value="<?php echo $logid; ?>" />
 			<?php if(ROLE == ROLE_VISITOR): ?>
-			<p>
+				<p class="input-group col-xs-3">
+				  <span class="input-group-addon" id="sizing-addon2">昵称:</span>
+				  <input type="text" class="form-control" placeholder="给自己取个昵称吧" aria-describedby="sizing-addon2" value="<?php echo $ckname; ?>" name="comname">
+				</p>
+<!-- 			<p>
 				<input type="text" class="form-control" name="comname" maxlength="49" value="<?php echo $ckname; ?>" size="22" tabindex="1">
-			<label for="author"><small>昵称</small></label>
-			</p>
-
+			</p> -->
 			<?php endif; ?>
 			<p><textarea class="form-control" name="comment" id="comment" rows="10" tabindex="4"></textarea></p>
-			<p><?php echo $verifyCode; ?> <input class="btn btn-danger make" data-toggle="modal" data-target="#content" type="submit" id="comment_submit" value="发表评论" tabindex="6" /></p>
+			<p><?php echo $verifyCode; ?> <input class="btn btn-danger make pull-right" data-toggle="modal" data-target="#content" type="submit" id="comment_submit" value="发表评论" tabindex="6" /></p>
 			<br>
-			<input type="hidden" name="pid" id="comment-pid" value="0" size="22" tabindex="1"/>
+			<!-- <input type="hidden" name="pid" id="comment-pid" value="0" size="22" tabindex="1"/> -->
 		</form>
 	</div>
 	</div>
