@@ -415,9 +415,9 @@ function blog_comments_post($logid,$ckname,$ckmail,$ckurl,$verifyCode,$allow_rem
 		<form method="post" name="commentform" action="<?php echo BLOG_URL; ?>index.php?action=addcom" id="commentform">
 			<input type="hidden" name="gid" value="<?php echo $logid; ?>" />
 			<?php if(ROLE == ROLE_VISITOR): ?>
-				<p class="input-group col-xs-3">
-				  <span class="input-group-addon" id="sizing-addon2">昵称:</span>
-				  <input type="text" class="form-control" placeholder="给自己取个昵称吧" aria-describedby="sizing-addon2" value="<?php echo $ckname; ?>" name="comname">
+				<p class="input-group">
+				  <span class="input-group-addon" id="sizing-addon2">昵称</span>
+				  <input type="text" class="form-control" placeholder="给自己取个昵称吧" aria-describedby="sizing-addon2" id="username" value="<?php echo $ckname; ?>" name="comname">
 				</p>
 <!-- 			<p>
 				<input type="text" class="form-control" name="comname" maxlength="49" value="<?php echo $ckname; ?>" size="22" tabindex="1">

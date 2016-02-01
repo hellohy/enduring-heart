@@ -5,7 +5,6 @@
 if(!defined('EMLOG_ROOT')) {exit('error!');}
 ?>
 		<div class="content-body">
-
 			<div class="container">
 				<div class="row">
 					<main class="col-md-12">

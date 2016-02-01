@@ -17,22 +17,16 @@ require_once View::getView('module');
 		<title><?php echo $site_title; ?></title>
 
 		<!-- meta -->
-		<meta charset="UTF-4">
+		<meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	    <!-- css -->
-		<!-- <link rel="stylesheet" href="<?php echo TEMPLATE_URL; ?>css/normalize.css"> -->
-		<!-- <link rel="stylesheet" href="<?php echo TEMPLATE_URL; ?>css/pace.css"> -->
 		<link rel="stylesheet" href="<?php echo TEMPLATE_URL; ?>css/bootstrap.min.css">
-		<!-- <link rel="stylesheet" href="<?php echo TEMPLATE_URL; ?>css/ionicons.min.css"> -->
-	    <!-- <link rel="stylesheet" href="<?php echo TEMPLATE_URL; ?>css/custom.css"> -->
 	    <link rel="stylesheet" href="<?php echo TEMPLATE_URL; ?>css/style.css">
 
 	    <!-- js -->
 	    <script src="<?php echo TEMPLATE_URL; ?>js/jquery-2.1.3.min.js"></script>
-	    <!-- <script src="<?php echo TEMPLATE_URL; ?>js/pace.min.js"></script> -->
 	    <script src="<?php echo TEMPLATE_URL; ?>js/bootstrap.min.js"></script>
-	    <!-- <script src="<?php echo TEMPLATE_URL; ?>js/modernizr.custom.js"></script> -->
 	    <script>
 	    window.onload = function(){
 	    	if (window.location.href == "<?php echo BLOG_URL; ?>") {

@@ -134,6 +134,11 @@ canvas {
     margin-top: 20px;
     padding-bottom: 30px;
 }
+@media (max-width:400px) {
+    .more-link {
+        font-size: 13px;
+    }
+}
 .cl-effect-14 a {
     padding: 0 20px;
     height: 45px;
@@ -238,4 +243,7 @@ canvas {
 }
 textarea.form-control {
     height: 90px;
+}
+#username {
+    width: 100px;
 }
