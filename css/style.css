@@ -138,6 +138,8 @@ canvas {
     top: 100%;
     content: attr(data-hover);
     font-weight: 700;
+    width: 150%;
+    text-align: left;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
