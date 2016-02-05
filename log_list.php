@@ -11,8 +11,8 @@ if(!defined('EMLOG_ROOT')) {exit('error!');}
 						<?php if (!empty($logs)): foreach($logs as $value): ?>
 						<article class="post post-1">
 							<header class="entry-header">
-								<h1 class="entry-title">
-									<a href="<?php echo $value['log_url']; ?>"><?php echo $value['log_title']; ?></a>
+								<h1 class="entry-title cl-effect-5">
+									<a href="<?php echo $value['log_url']; ?>"><span data-hover="<?php echo $value['log_title']; ?>"><?php echo $value['log_title']; ?></span></a>
 								</h1>
 								<div class="entry-meta">
 									<span class="post-category"><?php blog_sort($value['logid']); ?></span>

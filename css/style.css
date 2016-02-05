@@ -7,6 +7,7 @@
  * 4.0 - content-body
  * 5.0 - Footer
  * 6.0 - comment
+ * 7.0 - Media Require
  */
 
 /**
@@ -25,8 +26,7 @@ html {
 }
 body {
     background: #000;
-    color: #fff;
-    font-size: 18px;
+    color: #fff;    /*font-size: 18px;*/
     font-family: 'Lato', sans-serif;
 }
 a {
@@ -76,10 +76,31 @@ canvas {
 #search-form button {
     margin-bottom: 3px;
 }
-@media (max-width:768px) {
-    #search-form {
-        display: none;
-    }
+.cl-effect-11 a {
+    padding: 0 0 10px;
+}
+.cl-effect-11 a::after {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+.cl-effect-11 a:hover::after, .cl-effect-4 a:focus::after {
+    height: 3px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
 }
 
 /**
@@ -96,10 +117,35 @@ canvas {
 }
 .entry-title {
     text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
-    line-height: 1.6;
+    margin-bottom: 20px;    /*line-height: 1.6;*/
     padding: 10px 20px 0;
+}
+.cl-effect-5 a {
+    overflow: hidden;
+    padding: 0 4px;
+    height: 1em;
+    display: inline-block;
+}
+.cl-effect-5 a span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+}
+.cl-effect-5 a span::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.cl-effect-5 a:hover span, .cl-effect-5 a:focus span {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
 }
 .entry-content {
     font-size: 20px;
@@ -133,11 +179,6 @@ canvas {
     text-align: center;
     margin-top: 20px;
     padding-bottom: 30px;
-}
-@media (max-width:400px) {
-    .more-link {
-        font-size: 13px;
-    }
 }
 .cl-effect-14 a {
     padding: 0 20px;
@@ -217,6 +258,9 @@ canvas {
     margin: 0;
     color: #999;
 }
+.copyright a {
+    font-size: 16px;
+}
 
 /**
  * 6.0 - comment
@@ -240,10 +284,40 @@ canvas {
 .comment-content {
     margin: 10px 36px;
     word-wrap: break-word;
+    font-size: 16px;
 }
 textarea.form-control {
     height: 90px;
 }
 #username {
-    width: 100px;
+    width: 140px;
+}
+
+/**
+ * 7.0 - Media Require
+ */
+@media (max-width:768px) {
+    #search-form {
+        display: none;
+    }
+    .entry-title {
+        font-size: 30px;
+    }
+}
+@media (max-width:400px) {
+    .more-link, .comment-content {
+        font-size: 13px;
+    }
+    .entry-meta {
+        font-size: 13px;
+    }
+    .entry-content {
+        font-size: 16px;
+    }
+    .entry-title {
+        font-size: 25px;
+    }
+    .post-category::after, .post-date::after, .post-author::after {
+        top: -22px;
+    }
 }
