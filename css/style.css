@@ -95,7 +95,7 @@ canvas {
     -moz-transform: translateY(-10px);
     transform: translateY(-10px);
 }
-.cl-effect-11 a:hover::after, .cl-effect-4 a:focus::after {
+.cl-effect-active a::after, .cl-effect-11 a:hover::after, .cl-effect-4 a:focus::after {
     height: 3px;
     opacity: 1;
     -webkit-transform: translateY(0px);

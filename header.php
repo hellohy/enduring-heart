@@ -37,6 +37,16 @@ require_once View::getView('module');
 				var canvas = document.getElementById("heart");
 				document.body.removeChild(canvas);
 			}
+			var lis = document.getElementsByClassName("cl-effect-11");
+			for(var i = 0 ; i<lis.length;i++){
+				(function(i){
+					if(window.location.href == lis[i].children[0].href){
+					var classVal = lis[i].getAttribute("class");
+					lis[i].setAttribute("class",classVal.concat(" cl-effect-active"));
+				}
+				})(i);
+
+			}
 	    }
 	    </script>
 	</head>
