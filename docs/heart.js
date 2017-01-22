@@ -27,7 +27,7 @@ var init = function() {
     var canvas = document.getElementById('heart');
     var ctx = canvas.getContext('2d');
     var width = canvas.width = koef * innerWidth;
-    var height = canvas.height = 0.6*koef * innerHeight;
+    var height = canvas.height = koef * innerHeight;
     var rand = Math.random;
     ctx.fillStyle = "rgba(0,0,0,1)";
     ctx.fillRect(0, 0, width, height);
