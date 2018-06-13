@@ -1,15 +1,14 @@
-# 前端基础学习路线
-
-Front-end-tutorial 是一份为即将选择和已经选择前端作为职业的萌新们梳理的一份前端知识大纲
-
-## 学习路线图
-![roadmap](./img/roadmap-2.png) 
- 
-> 黄色：推荐学习，尽量掌握 
- 
-> 灰色：尽可能学习 
- 
-> 橙色：任选其一 
-
-## 详细知识点
-[知识清单](front-end-roadmap.md)
+---
+home: true
+heroImage: /roadmap-2.png
+actionText: 开始阅读 
+actionLink: /curated-tutorial/
+features:
+- title: 知识清单
+  details: 覆盖的web前端知识点详细完备、由浅入深，适合各个阶段的人学习
+- title: 分享会
+  details: 定期开展分享会。
+- title: 翻译
+  details: 翻译一些优秀的技术外文。
+footer: Copyright © 2018-present 网龙前端学习小组
+---

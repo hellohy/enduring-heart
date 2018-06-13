@@ -1,3 +1,5 @@
+## 常用的ES6特性
+
 原文：[Introduction to commonly used ES6 features](https://zellwk.com/blog/es6/)
 
 **近年来，Javascript已经得到了很大的发展。如果你在2017年学习JavaScript，却还没有接触到ES6，那么你就错过了一种更容易阅读和编写JavaScript的方法。**

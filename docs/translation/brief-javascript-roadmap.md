@@ -1,4 +1,4 @@
-## 阶段学习
+## Javascript阶段学习
 
 简要地把Javascirpt学习分成了四个阶段。
 

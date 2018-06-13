@@ -1,3 +1,5 @@
+## ES6技巧
+
 ### Let and const
 
 + 块级作用域

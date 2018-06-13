@@ -2,7 +2,7 @@
 
 ### HTML
 
-#### [基础](curated-tutorial/basic-html.md)
+#### [基础](basic-html.md)
 
 + 常用的标签与属性
 + 语义化HTML
@@ -10,7 +10,7 @@
 
 ### CSS
 
-#### [基础](curated-tutorial/basic-css.md)
+#### [基础](basic-css.md)
 
 + CSS基础：引入方法、选择器、常用属性、动画
 + CSS页面布局
@@ -33,7 +33,7 @@
 
 ### JavaScript
 
-#### [基础](curated-tutorial/basic-javascript.md)
+#### [基础](basic-javascript.md)
 
 + 核心、DOM、BOM
 + AJAX XHR

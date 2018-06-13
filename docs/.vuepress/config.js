@@ -1,28 +1,22 @@
 module.exports = {
-  title: '前端基础学习路线',
-  description: 'front-end-tutorial',
   base: '/enduring-heart/',
+  title: 'Web前端基础学习路线',
+  description: '按阶段学习并提升前端技能',
+  markdown: {
+    toc: {
+      includeLevel: [2, 3, 4, 5, 6]
+    }
+  },
   themeConfig: {
-    sidebar: {
-      '/': genSidebarConfig(''),
-      '/curated-tutorial/': [
-        {
-          title: '基础教程',
-          collapsable: false,
-          children: [
-            '',
-            'basic-css',
-            'basic-html',
-            'basic-javascript'
-          ]
-        }
-      ]
-    },
+    repo: 'hellohy/enduring-heart',
+    docsDir: 'docs',
+    editLinks: true,
+    editLinkText: '帮助我们改善此页面！',
     sidebarDepth: 2,
     nav: [
       {
-        text: '基础教程',
-        link: '/curated-tutorial/'
+        text: '学习材料',
+        link: '/curated-tutorial/',
       },
       {
         text: '分享会',
@@ -31,20 +25,42 @@ module.exports = {
       {
         text: '翻译',
         link: '/translation/'
-      }
-    ]
-  }
-}
-
-function genSidebarConfig (title) {
-  return [
-    {
-      title,
-      collapsable: false,
-      children: [
-        '',
-        'front-end-roadmap'
+      },
+      // {
+      //   text: '关于',
+      //   link: '/about/'
+      // }
+    ],
+    sidebar: {
+      '/curated-tutorial/': [
+        {
+          title: '学习材料(持续更新...)',
+          children: [
+            '',
+            'front-end-roadmap',
+            'basic-css',
+            'basic-html',
+            'basic-javascript',
+          ]
+        }
+      ],
+      '/share/': [
+        {
+          title: '分享会',
+          children: [
+            'es6-practical-skills',
+          ]
+        }
+      ],
+      '/translation/': [
+        {
+          title: '翻译',
+          children: [
+            'brief-javascript-roadmap.md',
+            'commonly-used-ES6-features'
+          ]
+        }
       ]
     }
-  ]
+  }
 }
