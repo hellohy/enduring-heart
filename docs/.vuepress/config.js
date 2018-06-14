@@ -26,6 +26,10 @@ module.exports = {
         text: '翻译',
         link: '/translation/'
       },
+      {
+        text: '读书笔记',
+        link: '/reading-notes/'
+      }
       // {
       //   text: '关于',
       //   link: '/about/'
@@ -41,6 +45,9 @@ module.exports = {
             'basic-css',
             'basic-html',
             'basic-javascript',
+            'advanced-css',
+            'advanced-javascript',
+            'expanded-javascript'
           ]
         }
       ],
@@ -58,6 +65,14 @@ module.exports = {
           children: [
             'brief-javascript-roadmap.md',
             'commonly-used-ES6-features'
+          ]
+        }
+      ],
+      '/reading-notes/': [
+        {
+          title: '读书笔记',
+          children: [
+            ''
           ]
         }
       ]
